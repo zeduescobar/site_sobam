@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste EmailJS - SOBAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen py-8">
+    <div class="container mx-auto px-4 max-w-md">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-2xl font-bold text-center mb-6 text-blue-600">Teste EmailJS</h1>
+            
+            <div class="mb-4 p-3 bg-yellow-100 border border-yellow-300 rounded">
+                <p class="text-sm text-yellow-800">
+                    <strong>Importante:</strong> Configure o EmailJS no arquivo script.js antes de testar!
+                </p>
+            </div>
+            
+            <form id="test-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                    <input type="text" id="test-nome" class="w-full px-3 py-2 border border-gray-300 rounded-md" value="Teste SOBAM">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="test-email" class="w-full px-3 py-2 border border-gray-300 rounded-md" value="teste@exemplo.com">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                    <input type="tel" id="test-telefone" class="w-full px-3 py-2 border border-gray-300 rounded-md" value="(11) 99999-9999">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Modalidade</label>
+                    <select id="test-modalidade" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                        <option value="individual">Individual</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="empresarial">Empresarial</option>
+                    </select>
+                </div>
+                
+
+                
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+                    Testar Envio
+                </button>
+            </form>
+            
+            <div id="test-status" class="mt-4 p-3 rounded-md hidden">
+                <div id="test-loading" class="hidden text-blue-600">
+                    <i class="fas fa-spinner fa-spin mr-2"></i>Enviando...
+                </div>
+                <div id="test-success" class="hidden text-green-600">
+                    <i class="fas fa-check mr-2"></i>Email enviado com sucesso!
+                </div>
+                <div id="test-error" class="hidden text-red-600">
+                    <i class="fas fa-times mr-2"></i>Erro ao enviar email
+                </div>
+            </div>
+            
+            <div class="mt-6 p-3 bg-gray-100 rounded">
+                <h3 class="font-medium text-gray-800 mb-2">Como configurar:</h3>
+                <ol class="text-sm text-gray-600 space-y-1 list-decimal list-inside">
+                    <li>Abra o arquivo <code class="bg-gray-200 px-1 rounded">script.js</code></li>
+                    <li>Substitua <code class="bg-gray-200 px-1 rounded">SEU_USER_ID_AQUI</code></li>
+                    <li>Substitua <code class="bg-gray-200 px-1 rounded">SEU_SERVICE_ID_AQUI</code></li>
+                    <li>Substitua <code class="bg-gray-200 px-1 rounded">SEU_TEMPLATE_ID_AQUI</code></li>
+                    <li>Teste o envio aqui</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inicializar EmailJS (substitua pelo seu User ID)
+        emailjs.init("SEU_USER_ID_AQUI");
+        
+        document.getElementById('test-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const status = document.getElementById('test-status');
+            const loading = document.getElementById('test-loading');
+            const success = document.getElementById('test-success');
+            const error = document.getElementById('test-error');
+            
+            // Mostrar status de carregamento
+            status.classList.remove('hidden');
+            loading.classList.remove('hidden');
+            success.classList.add('hidden');
+            error.classList.add('hidden');
+            
+            // Preparar dados do teste
+            const templateParams = {
+                to_name: "Equipe SOBAM",
+                from_name: document.getElementById('test-nome').value,
+                from_email: document.getElementById('test-email').value,
+                from_phone: document.getElementById('test-telefone').value,
+                modalidade: document.getElementById('test-modalidade').value,
+                reply_to: document.getElementById('test-email').value
+            };
+            
+            // Enviar email de teste
+            emailjs.send(
+                'SEU_SERVICE_ID_AQUI', // Substitua pelo seu Service ID
+                'SEU_TEMPLATE_ID_AQUI', // Substitua pelo seu Template ID
+                templateParams
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                loading.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, function(error) {
+                console.log('FAILED...', error);
+                loading.classList.add('hidden');
+                error.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

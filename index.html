@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBAM Planos - Preserve a saúde da sua família</title>
+    <meta name="description" content="Planos de saúde acessíveis com cobertura completa ANS. A partir de R$ 108,02/mês. Solicite seu orçamento gratuito!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/transferir.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="planos de saúde, SOBAM, saúde familiar, saúde empresarial, cobertura ANS, hospitais Jundiaí, policlínicas, laboratórios, planos coparticipativos, orçamento saúde, consultas médicas, exames laboratoriais, internação hospitalar, cirurgias eletivas, atendimento urgência, Cabreúva, Várzea, Campo Limpo, Itupeva, Caieiras, ortopedia, pediatria, especialidades médicas, transplantes, quimioterapia, hemodiálise, contratação online, corretora saúde">
+    <meta name="author" content="SOBAM Planos de Saúde">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Jundiaí, São Paulo">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SOBAM Planos - Preserve a saúde da sua família">
+    <meta property="og:description" content="Planos de saúde acessíveis com cobertura completa ANS. A partir de R$ 94,04/mês. Solicite seu orçamento gratuito!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://planosobam.com.br">
+    <meta property="og:image" content="images/transferir.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SOBAM Planos - Preserve a saúde da sua família">
+    <meta name="twitter:description" content="Planos de saúde acessíveis com cobertura completa ANS. A partir de R$ 94,04/mês. Solicite seu orçamento gratuito!">
+    <meta name="twitter:image" content="images/transferir.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0070BA',
+                        'primary-dark': '#005a94',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        @media (min-width: 768px) {
+            .hero-bg {
+                background-image: url('images/team-young-specialist-doctors-standing-corridor-hospital.jpg') !important;
+            }
+        }
+        .hero-bg {
+            background-image: url('images/fundo-hero-mobile.jpg');
+        }
+    </style>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PDP7B2XV');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDP7B2XV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Header Fixo -->
+    <header class="fixed top-0 left-0 right-0 bg-white z-50 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20 lg:h-24">
+                <!-- Logo SOBAM -->
+                <div class="flex items-center">
+                    <div class="flex items-center px-6 py-3">
+                        <img src="images/sobam-logo.png" alt="Grupo SOBAM" class="h-14 lg:h-18 w-auto">
+                    </div>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#individual" class="text-gray-800 hover:text-primary transition-colors font-medium">Individual e Familiar</a>
+                    <a href="#empresarial" class="text-gray-800 hover:text-primary transition-colors font-medium">Empresarial</a>
+                    <a href="#rede" class="text-gray-800 hover:text-primary transition-colors font-medium">Rede</a>
+                    <a href="#planos" class="text-gray-800 hover:text-primary transition-colors font-medium">Planos</a>
+                    <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-colors font-semibold">
+                        Solicitar Orçamento
+                    </a>
+                </nav>
+                
+                <!-- Menu Mobile -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Menu Mobile Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+                <div class="py-4 space-y-4">
+                    <a href="#individual" class="block text-gray-700 hover:text-primary font-medium">Individual e Familiar</a>
+                    <a href="#empresarial" class="block text-gray-700 hover:text-primary font-medium">Empresarial</a>
+                    <a href="#rede" class="block text-gray-700 hover:text-primary font-medium">Rede</a>
+                    <a href="#planos" class="block text-gray-700 hover:text-primary font-medium">Planos</a>
+                    <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" class="block w-full bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark font-semibold text-center">
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="home" - Página inicial/hero -->
+    <section id="home" class="pt-16 relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center bg-no-repeat hero-bg" style="background-position: center 20%;">
+            </div>
+            <!-- Overlay sutil para melhorar legibilidade -->
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative z-20 pt-40">
+            <div class="text-center max-w-3xl mx-auto">
+                <!-- Main Headline - TAMANHO REDUZIDO -->
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl font-black text-white mb-4 leading-tight">
+                    Preserve a saúde da sua 
+                    <span class="text-white">família e empresa</span>
+                </h1>
+                
+                <!-- Subtitle - TAMANHO REDUZIDO -->
+                <p class="text-sm lg:text-base xl:text-lg text-white mb-6 font-medium leading-relaxed">
+                    Planos de saúde com qualidade e cuidado referenciados na cidade de Jundiaí e região!
+                </p>
+                
+                <!-- Price Section - MUITO DESTACADO -->
+                <div class="bg-white rounded-xl p-4 lg:p-6 shadow-lg mb-6 inline-block">
+                    <div class="text-sm lg:text-base text-gray-600 font-medium mb-1">A partir de</div>
+                    <div class="text-3xl lg:text-5xl xl:text-6xl font-black text-primary mb-1 leading-none">
+                        ㅤR$ 94,04ㅤ
+                    </div>
+                    <div class="text-base lg:text-lg text-gray-700 font-semibold">por mês</div>
+                    <div class="text-xs text-gray-500 mt-1">Valor CNPJ: 0-18 anos</div>
+                </div>
+                
+                <!-- CTA Button - Responsivo -->
+                <!-- Botão WhatsApp (Mobile) -->
+                <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" class="md:hidden inline-block bg-primary text-white px-6 lg:px-10 py-3 lg:py-5 rounded-lg text-base lg:text-xl font-black hover:bg-primary-dark transition-colors shadow-lg">
+                    <i class="fab fa-whatsapp mr-2 text-lg lg:text-xl"></i>
+                    QUERO UM ORÇAMENTO AGORA!
+                </a>
+                
+                <!-- Botão Formulário (Desktop) -->
+                <a href="#formulario" class="hidden md:inline-block bg-primary text-white px-6 lg:px-10 py-3 lg:py-5 rounded-lg text-base lg:text-xl font-black hover:bg-primary-dark transition-colors shadow-lg">
+                    <i class="fas fa-file-alt mr-2 text-lg lg:text-xl"></i>
+                    QUERO UM ORÇAMENTO AGORA!
+                </a>
+                
+                <!-- Trust Indicators -->
+                <div class="mt-6 flex flex-wrap justify-center items-center gap-4 text-white">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-lg mr-2 text-white"></i>
+                        <span class="text-sm font-medium">Cobertura ANS</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-hospital text-lg mr-2 text-white"></i>
+                        <span class="text-sm font-medium">Rede Própria</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-lg mr-2 text-white"></i>
+                        <span class="text-sm font-medium">Atendimento 24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Benefícios -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="beneficios" - Seção de benefícios -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Por que escolher a SOBAM?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Oferecemos os melhores benefícios para garantir sua tranquilidade e bem-estar
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefício 1 -->
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cobertura Completa ANS</h3>
+                    <p class="text-gray-600">Planos regulamentados pela Agência Nacional de Saúde</p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-pills text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Descontos em Farmácias</h3>
+                    <p class="text-gray-600">Rede credenciada com descontos especiais em medicamentos</p>
+                </div>
+                
+                <!-- Benefício 3 -->
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bed text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Acomodação Flexível</h3>
+                    <p class="text-gray-600">Coletiva ou privativa conforme sua preferência</p>
+                </div>
+                
+                <!-- Benefício 4 -->
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Atendimento Regional</h3>
+                    <p class="text-gray-600">Rede própria em várias cidades da região</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="planos" - Seção de planos -->
+    <section id="planos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Escolha o plano ideal para você
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Temos opções para todos os perfis e necessidades
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Plano Individual/Familiar -->
+                <!-- ÂNCORA PARA GOOGLE ADS: id="individual" - Plano individual e familiar -->
+                <div id="individual" class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-center mb-8">
+                        <img src="images/individual-e-familiar.jpg" alt="Plano Individual e Familiar" class="w-full h-64 object-cover rounded-lg mb-4" onerror="this.src='images/individual e familiar.jpg'">
+                        <h3 class="text-2xl font-bold mb-2">Individual/Familiar</h3>
+                        <p class="text-gray-600">Perfeito para você e sua família</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Cobertura para consultas médicas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Exames laboratoriais</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Internação hospitalar</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Cirurgias eletivas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Atendimento de urgência</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors text-center">
+                        Receber orçamento
+                    </a>
+                </div>
+                
+                <!-- Plano Empresarial -->
+                <!-- ÂNCORA PARA GOOGLE ADS: id="empresarial" - Plano empresarial -->
+                <div id="empresarial" class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-primary">
+                    <div class="text-center mb-8">
+                        <img src="images/empresarial.jpg" alt="Plano Empresarial" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Empresarial</h3>
+                        <p class="text-gray-600">MEI e CNPJ - Cuide da sua equipe</p>
+                        <div class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold mt-2 inline-block">
+                            Mais Popular
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Todos os benefícios do plano individual</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Descontos especiais para empresas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Gestão simplificada de beneficiários</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Suporte dedicado para empresas</span>
+                        </li>
+
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors text-center">
+                        Receber orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rede de Atendimento -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="rede" - Rede de atendimento -->
+    <section id="rede" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Rede de Atendimento
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Parcerias com os melhores hospitais, clínicas e laboratórios da região
+                </p>
+            </div>
+            
+            <!-- Carrossel de Parceiros -->
+            <div class="max-w-6xl mx-auto">
+                <!-- Navegação por Categoria -->
+                <div class="flex justify-center mb-8">
+                    <div class="flex space-x-4 bg-gray-100 rounded-lg p-2">
+                        <button class="category-btn active px-6 py-2 rounded-md font-semibold transition-colors" data-category="hospitais">
+                            Hospitais
+                        </button>
+                        <button class="category-btn px-6 py-2 rounded-md font-semibold transition-colors" data-category="policlinicas">
+                            Policlínicas
+                        </button>
+                        <button class="category-btn px-6 py-2 rounded-md font-semibold transition-colors" data-category="laboratorios">
+                            Laboratórios
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Container de Conteúdo -->
+                <div class="relative">
+                    <!-- Conteúdo de Hospitais -->
+                    <div class="category-content active" data-category="hospitais">
+                        <div class="auto-carousel-container">
+                            <!-- Botões de Navegação -->
+                            <button class="carousel-nav-btn prev-btn absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10" data-category="hospitais">
+                                <i class="fas fa-chevron-left text-primary text-xl"></i>
+                            </button>
+                            <button class="carousel-nav-btn next-btn absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10" data-category="hospitais">
+                                <i class="fas fa-chevron-right text-primary text-xl"></i>
+                            </button>
+                            
+                            <div class="auto-carousel-track" data-category="hospitais">
+                                <div class="carousel-slide">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/hospitais/Hospital-Clinicas-Caieiras-.jpg" alt="Hospital Clínicas Caieiras" class="w-full h-64 object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">Hospital Clínicas Caieiras</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento especializado em Caieiras</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/hospitais/Hospital-Pitangueiras-Jundiai-SP.jpg" alt="Hospital Pitangueiras Jundiaí" class="w-full h-64 object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">Hospital Pitangueiras</h4>
+                                            <p class="text-gray-600 text-sm">Referência em Jundiaí</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/hospitais/hospital-psiquiatrico-itupeva.jpeg" alt="Hospital Psiquiátrico Itupeva" class="w-full h-64 object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">Hospital Psiquiátrico Itupeva</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento psiquiátrico especializado em Itupeva</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Conteúdo de Policlínicas -->
+                    <div class="category-content hidden" data-category="policlinicas">
+                        <!-- Layout Desktop: Fixo -->
+                        <div class="hidden md:grid md:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Policlinica-Cabreuva.jpg" alt="Policlínica Cabreúva" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Policlínica Cabreúva</h4>
+                                    <p class="text-gray-600 text-sm">Atendimento em Cabreúva</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Policlinica-Campo-Limpo-PTA.jpg" alt="Policlínica Campo Limpo PTA" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Policlínica Campo Limpo PTA</h4>
+                                    <p class="text-gray-600 text-sm">Atendimento em Campo Limpo</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Policlinica-Varzea-PTA.jpg" alt="Policlínica Várzea PTA" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Policlínica Várzea PTA</h4>
+                                    <p class="text-gray-600 text-sm">Atendimento em Várzea</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Centro-de-Ortopedia-Jundiai.jpg" alt="Centro de Ortopedia Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Centro de Ortopedia Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Especializado em Ortopedia</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Centro-de-Pediatria-Jundiai.jpg" alt="Centro de Pediatria Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Centro de Pediatria Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Especializado em Pediatria</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/policlinicas/Centro-de-Especialidades-Jundiai.jpg" alt="Centro de Especialidades Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Centro de Especialidades Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Múltiplas Especialidades</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Layout Mobile: Carrossel -->
+                        <div class="md:hidden relative">
+                            <button class="carousel-btn prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10">
+                                <i class="fas fa-chevron-left text-primary text-xl"></i>
+                            </button>
+                            <button class="carousel-btn next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10">
+                                <i class="fas fa-chevron-right text-primary text-xl"></i>
+                            </button>
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out">
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Policlinica-Cabreuva.jpg" alt="Policlínica Cabreúva" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Policlínica Cabreúva</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento em Cabreúva</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Policlinica-Campo-Limpo-PTA.jpg" alt="Policlínica Campo Limpo PTA" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Policlínica Campo Limpo PTA</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento em Campo Limpo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Policlinica-Varzea-PTA.jpg" alt="Policlínica Várzea PTA" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Policlínica Várzea PTA</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento em Várzea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Centro-de-Ortopedia-Jundiai.jpg" alt="Centro de Ortopedia Jundiaí" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Centro de Ortopedia Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Especializado em Ortopedia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Centro-de-Pediatria-Jundiai.jpg" alt="Centro de Pediatria Jundiaí" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Centro de Pediatria Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Especializado em Pediatria</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/policlinicas/Centro-de-Especialidades-Jundiai.jpg" alt="Centro de Especialidades Jundiaí" class="w-full object-cover">
+                                    <div class="p-4">
+                                        <h4 class="font-semibold text-lg mb-2">Centro de Especialidades Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Múltiplas Especialidades</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/hospitais/hospital-psiquiatrico-itupeva.jpg" alt="Hospital Psiquiátrico Itupeva" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Hospital Psiquiátrico Itupeva</h4>
+                                            <p class="text-gray-600 text-sm">Atendimento psiquiátrico especializado em Itupeva</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Conteúdo de Laboratórios -->
+                    <div class="category-content hidden" data-category="laboratorios">
+                        <!-- Layout Desktop: Fixo -->
+                        <div class="hidden md:grid md:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/CTA-Caieiras.jpg" alt="CTA Caieiras" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">CTA Caieiras</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Caieiras</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/Anchieta-Campo-Limpo-PTA.jpg" alt="Anchieta Campo Limpo PTA" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Anchieta Campo Limpo PTA</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Campo Limpo</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/Anchieta-Itupeva.jpg" alt="Anchieta Itupeva" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Anchieta Itupeva</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Itupeva</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/Anchieta-Rua-Anchieta-Jundiai.jpg" alt="Anchieta Rua Anchieta Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Anchieta Rua Anchieta Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/Anchieta-Rua-23-de-Maio-Jundiai.jpg" alt="Anchieta Rua 23 de Maio Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Anchieta Rua 23 de Maio Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                <img src="images/Laboratorios/Anchieta-Rua-Italia-Jundiai.jpg" alt="Anchieta Rua Itália Jundiaí" class="w-full object-cover">
+                                <div class="p-6">
+                                    <h4 class="font-semibold text-lg mb-2">Anchieta Rua Itália Jundiaí</h4>
+                                    <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Layout Mobile: Carrossel -->
+                        <div class="md:hidden relative">
+                            <button class="carousel-btn prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10">
+                                <i class="fas fa-chevron-left text-primary text-xl"></i>
+                            </button>
+                            <button class="carousel-btn next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors z-10">
+                                <i class="fas fa-chevron-right text-primary text-xl"></i>
+                            </button>
+                            <div class="carousel-track flex transition-transform duration-300 ease-in-out">
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/Laboratorios/CTA-Caieiras.jpg" alt="CTA Caieiras" class="w-full object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">CTA Caieiras</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Caieiras</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/Laboratorios/Anchieta-Campo-Limpo-PTA.jpg" alt="Anchieta Campo Limpo PTA" class="w-full object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">Anchieta Campo Limpo PTA</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Campo Limpo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                        <img src="images/Laboratorios/Anchieta-Itupeva.jpg" alt="Anchieta Itupeva" class="w-full object-cover">
+                                        <div class="p-6">
+                                            <h4 class="font-semibold text-lg mb-2">Anchieta Itupeva</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Itupeva</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/Laboratorios/Anchieta-Rua-Anchieta-Jundiai.jpg" alt="Anchieta Rua Anchieta Jundiaí" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Anchieta Rua Anchieta Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/Laboratorios/Anchieta-Rua-23-de-Maio-Jundiai.jpg" alt="Anchieta Rua 23 de Maio Jundiaí" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Anchieta Rua 23 de Maio Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide min-w-full px-4">
+                                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                                                                            <img src="images/Laboratorios/Anchieta-Rua-Italia-Jundiai.jpg" alt="Anchieta Rua Itália Jundiaí" class="w-full object-cover">
+                                    <div class="p-6">
+                                        <h4 class="font-semibold text-lg mb-2">Anchieta Rua Itália Jundiaí</h4>
+                                            <p class="text-gray-600 text-sm">Laboratório em Jundiaí</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="faq" - Perguntas frequentes -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    FAQ - Perguntas Frequentes
+                </h2>
+                <p class="text-xl text-gray-600">Tire suas dúvidas sobre nossos planos de saúde</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="faq-container bg-white rounded-lg border-2 border-primary p-6 shadow-sm">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Qual a vantagem em contratar um plano coparticipativo?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A grande vantagem é o valor! Os planos Sobam coparticipativos contam com um valor até 20% mais baixo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quais procedimentos médicos cobrem os planos Sobam?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Cobrem praticamente TODOS! Tanto os planos coparticipativos quanto sem coparticipação cobrem todos os procedimentos constatados no Rol da ANS. Por como exemplo: consultas, exames, cirurgias, internações, transplantes de rim, córnea e medula e tratamentos complexos como quimioterapia e hemodiálise</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como funciona a contratação?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ela é TOTALMENTE ONLINE! Após o início da pandemia, tivemos que adaptar nosso modelo de contratação antes feito todo presencialmente. Agora o processo é inteiramente online: Rápido, prático e sem burocracia!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Como recebo o orçamento com os valores do meu plano?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Preencha o formulário na área acima "solicite seu orçamento", e um consultor especializado Sobam entrará em contato por telefone ou WhatsApp para realizar seu orçamento, e posteriormente, efetivar a contratação do seu plano de saúde!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Orçamento -->
+    <!-- ÂNCORA PARA GOOGLE ADS: id="formulario" - Formulário de orçamento -->
+    <section id="formulario" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                        Solicite seu orçamento gratuito
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Preencha os dados abaixo e nossa equipe entrará em contato
+                    </p>
+                </div>
+                
+                <form id="contact-form" class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-semibold text-gray-700 mb-2">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="telefone" class="block text-sm font-semibold text-gray-700 mb-2">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">E-mail *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="modalidade" class="block text-sm font-semibold text-gray-700 mb-2">Modalidade *</label>
+                            <select id="modalidade" name="modalidade" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Selecione uma opção</option>
+                                <option value="individual">Individual</option>
+                                <option value="familiar">Familiar</option>
+                                <option value="empresarial">Empresarial</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <!-- Status do envio -->
+                    <div id="form-status" class="hidden mb-4 p-4 rounded-lg text-center">
+                        <div id="loading-status" class="hidden">
+                            <i class="fas fa-spinner fa-spin text-primary text-xl mr-2"></i>
+                            <span class="text-primary font-medium">Enviando formulário...</span>
+                        </div>
+                        <div id="success-status" class="hidden">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-2"></i>
+                            <span class="text-green-700 font-medium">Formulário enviado com sucesso! Entraremos em contato em breve.</span>
+                        </div>
+                        <div id="error-status" class="hidden">
+                            <i class="fas fa-exclamation-circle text-red-500 text-xl mr-2"></i>
+                            <span class="text-red-700 font-medium">Erro ao enviar formulário. Tente novamente ou entre em contato pelo WhatsApp.</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="w-full bg-primary text-white py-4 rounded-lg text-lg font-semibold hover:bg-primary-dark transition-colors">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Solicitar orçamento
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Informações da Empresa -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo-sobam-1.png" alt="SOBAM" class="h-12 mr-4">
+                       
+                        <img src="images/Logo-VaiCo_horizontal_BRANCO_-1.png" alt="VaiCom" class="h-10" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none; color: white; font-weight: bold; font-size: 1.25rem;">VaiCom</span>
+                    </div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="images/ans-branca.png" alt="ANS" class="h-8" style="filter: brightness(0) invert(1);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none; color: white; font-weight: bold; font-size: 1rem;">ANS</span>
+                        <span class="text-sm text-gray-400">Regulamentado pela ANS</span>
+                    </div>
+                </div>
+                
+                <!-- Links Rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#individual" class="text-gray-300 hover:text-white transition-colors">Individual e Familiar</a></li>
+                        <li><a href="#empresarial" class="text-gray-300 hover:text-white transition-colors">Empresarial</a></li>
+                        <li><a href="#rede" class="text-gray-300 hover:text-white transition-colors">Rede</a></li>
+                        <li><a href="#planos" class="text-gray-300 hover:text-white transition-colors">Planos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(11) 4805-5293</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(11) 4805-5293</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Rua das Pitangueiras 660 - Jundiaí/SP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 VaiCom Saúde - Corretora de Planos de Saúde</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=5511967660060&text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20dos%20planos%20de%20sa%C3%BAde%20Sobam." target="_blank" 
+           class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="auto-carousel.js"></script>
+</body>
+</html> 
